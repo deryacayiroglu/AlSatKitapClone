@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".ui.login.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txtLogin_height"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/txtLogin_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_10dp"
+        android:layout_marginBottom="@dimen/text_margin_5dp"
+        android:text="@string/textEmail"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEMail"
+        app:layout_constraintStart_toStartOf="@+id/txtEMail" />
+
+    <EditText
+        android:id="@+id/txtEMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_20dp"
+        android:layout_marginTop="@dimen/login_margin_60dp"
+        android:layout_marginRight="@dimen/text_margin_20dp"
+        android:background="@drawable/edt_login_bg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="@dimen/text_padding"
+        android:hint="@string/txtEmail_hint"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/text_padding"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="@dimen/auto_fix"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_60dp"
+        android:background="@drawable/edt_login_bg"
+        android:drawablePadding="@dimen/text_padding"
+        android:hint="@string/txtPassword_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/text_padding_70dp"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEMail"
+        app:layout_constraintStart_toStartOf="@+id/txtEMail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEMail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_10dp"
+        android:layout_marginBottom="@dimen/text_margin_5dp"
+        android:text="@string/textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_10dp"
+        android:layout_marginTop="@dimen/text_margin_5dp"
+        android:text="@string/textEmail_info"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintStart_toStartOf="@+id/txtEMail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEMail" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_10dp"
+        android:layout_marginTop="@dimen/text_margin_5dp"
+        android:text="@string/textPassword_info"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/auto_fix"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin_60dp"
+        android:background="@drawable/btn_login_bg"
+        android:text="@string/btnLogin_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <ImageView
+        android:id="@+id/imgPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toTopOf="@+id/txtPassword"
+        app:srcCompat="@drawable/hide_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

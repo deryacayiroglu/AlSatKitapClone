@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365024822546",
+    "project_id": "alsatkitapclone",
+    "storage_bucket": "alsatkitapclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365024822546:android:d1bf60697601746962dfcb",
+        "android_client_info": {
+          "package_name": "com.cayiroglu.alsatkitapclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365024822546-j4uesqv3ipn3cu51g2i35p3c2f68qon6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVMHrLRi_Gq5giVnhLcBeSmHNDlNAxKnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365024822546-j4uesqv3ipn3cu51g2i35p3c2f68qon6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AlSatKitapClone</string>
+    <string name="txtLogin_text">Giriş Yap</string>
+    <string name="txtEmail_hint">E-posta adresi</string>
+    <string name="textEmail">E-posta Adresiniz</string>
+    <string name="textEmail_info">Kayıt olurken girdiğiniz email adresini giriniz</string>
+    <string name="txtPassword_hint">Şifre</string>
+    <string name="textPassword">Şifreniz</string>
+    <string name="textPassword_info">En az 6 haneli şifrenizi giriniz</string>
+    <string name="btnLogin_text">Giriş Yap</string>
+    <string name="login_failed_text">Giriş Başarısız</string>
+    <string name="login_null_text">Email ya da şifre alanı boş geçilemez!</string>
+    <string name="text_Category">KATEGORİLER</string>
+    <string name="text_Sort">SIRALA</string>
+    <string name="alert_dialog_positive_button">Evet</string>
+    <string name="alert_dialog_negative_button">Hayır</string>
+    <string name="alert_dialog_network_title">İnternet Bağlantınız Yok!</string>
+    <string name="alert_dialog_network_message">İnternet Ayarlarına Gidilsin Mi?</string>
+    <string name="alert_dialog_close_title">ÇIKIŞ</string>
+    <string name="alert_dialog_close_message">Uygulamadan çıkmak istiyor musunuz?</string>
+    <string name="alert_dialog_sort_title">Sıralama Seçiniz</string>
+    <string name="alert_dialog_sort_message">Uygulamadan çıkmak istiyor musunuz?</string>
+    <string name="text_grid">GRID</string>
+    <string name="text_liste">LİSTE</string>
+    <string-array name="alert_dialog_sort">
+        <item>İsme Göre Artan</item>
+        <item>İsme Göre Azalan</item>
+    </string-array>
+    <string name="tools_text_bookName">Kitap Adı</string>
+    <string name="tools_text_rating">4.0</string>
+    <string name="tools_text_state">iyi</string>
+    <string name="tools_text_publisher">Yayın Evi</string>
+    <string name="tools_text_author">Yazar</string>
+    <string name="tools_text_seller">Satıcı</string>
+    <string name="tools_text_numberOfPages">Sayfa Sayısı</string>
+    <string name="text_bookPrice">KİTABIN FİYATI</string>
+    <string name="tools_text_bookPrice">14.00₺</string>
+    <string name="tools_text_category">Kategori</string>
+    <string name="progress_dialog_text">Lütfen Bekleyiniz!!</string>
+</resources>

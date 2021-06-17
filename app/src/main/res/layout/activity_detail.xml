@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_fix"
+        app:layout_constraintBottom_toTopOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_fix"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/detail_view_height"
+                android:background="@drawable/detail_view"
+                app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="@dimen/detail_cardImage_width"
+                android:layout_height="@dimen/detail_cardImage_height"
+                android:layout_marginTop="@dimen/layout_margin_50dp"
+                android:background="@color/transparan_gray"
+                app:cardCornerRadius="@dimen/corner_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtBookNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_16dp"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/ratingBarDetail"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBarDetail"
+                tools:text="@string/tools_text_bookName" />
+
+            <RatingBar
+                android:id="@+id/ratingBarDetail"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_16dp"
+                android:numStars="5"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+            <TextView
+                android:id="@+id/txtRatingDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_16dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingBarDetail"
+                app:layout_constraintStart_toEndOf="@+id/ratingBarDetail"
+                app:layout_constraintTop_toTopOf="@+id/ratingBarDetail"
+                tools:text="@string/tools_text_rating" />
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_16dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingBarDetail"
+                app:layout_constraintStart_toEndOf="@+id/txtRatingDetail"
+                app:layout_constraintTop_toTopOf="@+id/ratingBarDetail"
+                tools:text="@string/tools_text_state" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_16dp"
+                android:drawableStart="@drawable/icon_publisher_16"
+                android:drawablePadding="@dimen/drawable_padding_16dp"
+                android:text="@string/tools_text_publisher"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/txtBookNameDetail"
+                app:layout_constraintTop_toBottomOf="@+id/txtBookNameDetail" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_16dp"
+                android:drawableStart="@drawable/icon_author_16"
+                android:drawablePadding="@dimen/drawable_padding_16dp"
+                android:text="@string/tools_text_author"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_16dp"
+                android:drawableStart="@drawable/icon_page_16"
+                android:drawablePadding="@dimen/drawable_padding_16dp"
+                android:text="@string/tools_text_numberOfPages"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/view_line_height"
+                android:layout_marginTop="@dimen/layout_margin_16dp"
+                android:background="@color/transparan_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/txtExplanation"
+                android:layout_width="@dimen/auto_fix"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_padding_16dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/txtNumberOfPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/textView11"
+                tools:text="@string/tools_text_numberOfPages" />
+
+            <TextView
+                android:id="@+id/txtAuthorDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/txtNumberOfPages"
+                app:layout_constraintTop_toTopOf="@+id/textView10"
+                tools:text="@string/tools_text_author" />
+
+            <TextView
+                android:id="@+id/txtPublisherDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/txtAuthorDetail"
+                app:layout_constraintTop_toTopOf="@+id/textView9"
+                tools:text="@string/tools_text_publisher" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/detail_viewPrice_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_line_height"
+        android:background="@color/transparan_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_16dp"
+        android:layout_marginTop="@dimen/layout_margin_16dp"
+        android:text="@string/text_bookPrice"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPriceDetail"
+        app:layout_constraintStart_toStartOf="@id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/txtPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin_16dp"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/view10"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        tools:text="@string/tools_text_bookPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
